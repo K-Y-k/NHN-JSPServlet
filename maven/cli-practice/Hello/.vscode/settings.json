@@ -1,0 +1,15 @@
+{
+    /**
+        vscode에서의 settings.json은 
+        환경을 이런 기반으로 설정한다는 것
+    */
+
+    // 컴파일 대상 지정 경로
+    "java.project.sourcePaths": ["src"],
+    // 컴파일된 클래스 파일들 대상 지정 경로
+    "java.project.outputPath": "bin",
+    // 외부 라이브러리들 추가
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar"
+    ]
+}

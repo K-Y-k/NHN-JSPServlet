@@ -1,9 +1,8 @@
-package com.nhnacademy;
+package com.nhnacademy.args;
 
 import com.beust.jcommander.JCommander;
-import com.nhnacademy.args.CgiArgs;
 
-public class Main {
+public class CgiArgsMain {
     public static void main(String[] args) {
         CgiArgs cgiArgs = new CgiArgs();
 
@@ -19,7 +18,5 @@ public class Main {
         System.out.println("server-port:" + cgiArgs.getPort());
         System.out.println("path:" + cgiArgs.getPath());
         System.out.println("body:" + cgiArgs.getBody());
-
     }
-    
 }
