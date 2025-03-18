@@ -1,0 +1,43 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>POST -> httpbin.org</title>
+</head>
+
+<body>
+    <form method="post" action="http://httpbin.org/post">
+        <input type="text" name="userId"  placeholder="user Id" required /> <br/>
+        <input type="text" name="userPassword" placeholder="user password" required /> <br/>
+        <input type="submit" />
+    </form>
+</body>
+
+</html>
+
+
+{
+    "args": {},
+    "data": "",
+    "files": {},
+    "form": {
+    "userId": "marco",
+    "userPassword": "1234"
+    },
+    "headers": {
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9",
+        "Accept-Encoding": "gzip, deflate",
+        "Accept-Language": "ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7",
+        "Cache-Control": "max-age=0",
+        "Content-Length": "30",
+        "Content-Type": "application/x-www-form-urlencoded",
+        "Host": "httpbin.org",
+        "Origin": "http://localhost:8080",
+        "Referer": "http://localhost:8080/",
+        "Upgrade-Insecure-Requests": "1",
+        "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36",
+        "X-Amzn-Trace-Id": "Root=1-63e327a7-1dfe202a1aca16182881f81d"
+    },
+    "json": null,
+    "origin": "117.16.21.235",
+    "url": "http://httpbin.org/post"
+}

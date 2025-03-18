@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
+         version="5.0">
+
+    <!--기본 페이지 적용-->
+    <welcome-file-list>
+        <welcome-file>/index.jsp</welcome-file>
+    </welcome-file-list>
+
+    <!--에러페이지 적용-->
+    <error-page>
+        <error-code>404</error-code>
+        <location>/error/404.html</location>
+    </error-page>
+    <error-page>
+        <error-code>500</error-code>
+        <location>/error/500.html</location>
+    </error-page>
+
+
+    <!--@WebServlet으로 필요 없어짐-->
+<!--    <servlet>-->
+<!--        <servlet-name>loginServlet</servlet-name>-->
+<!--        <servlet-class>com.nhnacademy.day2toServlet.day2to1.LoginServlet</servlet-class>-->
+
+<!--        <init-param>-->
+<!--            <param-name>id</param-name>-->
+<!--            <param-value>admin</param-value>-->
+<!--        </init-param>-->
+<!--        <init-param>-->
+<!--            <param-name>pwd</param-name>-->
+<!--            <param-value>1234</param-value>-->
+<!--        </init-param>-->
+<!--    </servlet>-->
+<!--    <servlet-mapping>-->
+<!--        <servlet-name>loginServlet</servlet-name>-->
+<!--        <url-pattern>/login</url-pattern>-->
+<!--    </servlet-mapping>-->
+
+<!--    <servlet>-->
+<!--        <servlet-name>logoutServlet</servlet-name>-->
+<!--        <servlet-class>com.nhnacademy.day2toServlet.day2to1.LogoutServlet</servlet-class>-->
+<!--    </servlet>-->
+<!--    <servlet-mapping>-->
+<!--        <servlet-name>logoutServlet</servlet-name>-->
+<!--        <url-pattern>/logout</url-pattern>-->
+<!--    </servlet-mapping>-->
+
+
+    <!--@WebFilter로 필요 없어짐-->
+<!--    <filter>-->
+<!--        <filter-name>characterEncodingFilter</filter-name>-->
+<!--        <filter-class>com.nhnacademy.day2toServlet.day2to2.CharacterEncodingFilter</filter-class>-->
+<!--        <init-param>-->
+<!--            <param-name>encoding</param-name>-->
+<!--            <param-value>UTF-8</param-value>-->
+<!--        </init-param>-->
+<!--    </filter>-->
+<!--    <filter-mapping>-->
+<!--        <filter-name>characterEncodingFilter</filter-name>-->
+<!--        <url-pattern>/*</url-pattern>-->
+<!--    </filter-mapping>-->
+
+<!--    <filter>-->
+<!--        <filter-name>loginCheckFilter</filter-name>-->
+<!--        <filter-class>com.nhnacademy.day2toServlet.day2to2.LoginCheckFilter</filter-class>-->
+<!--        <init-param>-->
+<!--            <param-name>exclude-urls</param-name>-->
+<!--            <param-value>-->
+<!--                /login-->
+<!--                /logout-->
+<!--                /day2to1/login.html-->
+<!--            </param-value>-->
+<!--        </init-param>-->
+<!--    </filter>-->
+<!--    <filter-mapping>-->
+<!--        <filter-name>loginCheckFilter</filter-name>-->
+<!--        <url-pattern>/*</url-pattern>-->
+<!--    </filter-mapping>-->
+
+
+
+    <!--@WebListener로 필요 없어짐-->
+<!--    <listener>-->
+<!--        <listener-class>com.nhnacademy.day2toServlet.day2to3.ServletContextListener</listener-class>-->
+<!--    </listener>-->
+
+    <!--javax.servlet.ServletContainerInitializer로 필요 없어짐-->
+<!--    <context-param>-->
+<!--        <param-name>counterFileName</param-name>-->
+<!--        <param-value>counter.dat</param-value>-->
+<!--    </context-param>-->
+
+    <!--@WebFilter로 필요 없어짐-->
+<!--    <filter>-->
+<!--        <filter-name>counterFilter</filter-name>-->
+<!--        <filter-class>com.nhnacademy.day2toServlet.day2to3.CounterFilter</filter-class>-->
+<!--    </filter>-->
+<!--    <filter-mapping>-->
+<!--        <filter-name>counterFilter</filter-name>-->
+<!--        <url-pattern>/*</url-pattern>-->
+<!--    </filter-mapping>-->
+
+
+    <!--@WebListener로 필요 없어짐-->
+<!--    <listener>-->
+<!--        <listener-class>com.nhnacademy.day2toServlet.day2to3.SessionListener</listener-class>-->
+<!--    </listener>-->
+
+
+    <!--@WebServlet으로 필요 없어짐-->
+<!--    <servlet>-->
+<!--        <servlet-name>fileUploadServlet</servlet-name>-->
+<!--        <servlet-class>com.nhnacademy.day2toServlet.day2to4.FileUploadServlet</servlet-class>-->
+<!--    </servlet>-->
+<!--    <servlet-mapping>-->
+<!--        <servlet-name>fileUploadServlet</servlet-name>-->
+<!--        <url-pattern>/file/fileUpload</url-pattern>-->
+<!--    </servlet-mapping>-->
+
+<!--    <servlet>-->
+<!--        <servlet-name>fileDownloadServlet</servlet-name>-->
+<!--        <servlet-class>com.nhnacademy.day2toServlet.day2to4.FileDownloadServlet</servlet-class>-->
+<!--    </servlet>-->
+<!--    <servlet-mapping>-->
+<!--        <servlet-name>fileDownloadServlet</servlet-name>-->
+<!--        <url-pattern>/file/fileDownload</url-pattern>-->
+<!--    </servlet-mapping>-->
+</web-app>
