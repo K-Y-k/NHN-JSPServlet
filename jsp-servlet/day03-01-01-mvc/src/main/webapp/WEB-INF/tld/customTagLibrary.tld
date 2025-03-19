@@ -1,0 +1,25 @@
+<!--JSP 태그 라이브러리 정의를 위한 taglib 파일-->
+<!--LocalDateTime을 지원하는 Custom Tag 만들기-->
+
+<taglib xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd"
+        version="2.0">
+
+    <!--Custom Tag의 설명 및 이름 및 uri경로 설정-->
+    <description>CommonUtil functions library</description>
+    <display-name>CommonUtil functions</display-name>
+    <tlib-version>1.0</tlib-version>
+    <short-name>cfmt</short-name>
+    <uri>http://nhnacademy.com/cfmt</uri>
+
+    <!--Custom Tag의 기능 이름 및 참조 클래스-->
+    <function>
+        <description>LocalDatetime parse</description>
+        <name>formatDate</name>
+        <function-class>com.nhnacademy.student.function.LocalDateTimeFunction</function-class>
+        <function-signature>java.lang.String formatDate(java.time.LocalDateTime,java.lang.String)</function-signature>
+        <example>
+            ${cfmt:formatDate(str)}
+        </example>
+    </function>
+</taglib>
