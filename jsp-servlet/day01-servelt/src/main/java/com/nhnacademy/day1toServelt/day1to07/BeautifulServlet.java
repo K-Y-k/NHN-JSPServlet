@@ -22,8 +22,12 @@ public class BeautifulServlet extends HttpServlet {
         
         // 전달받은 html 파라미터명의 데이터를 받음
         String html = req.getParameter("html");
-        
-        // 응답 메시지 설정
+
+        /**
+         * PrintWriter out = resp.getWriter()를 호출할 때,
+         * HttpServletResponse의 기본 설정이 text/html 및 ISO-8859-1로 되어 있다.
+         * 즉 여기서 나타낼 문자 형식이 달라서 응답 메시지에서 재설정한 것이다.
+         */
         resp.setContentType("text/plain");
         resp.setCharacterEncoding("utf-8");
 
