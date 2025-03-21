@@ -28,6 +28,7 @@ class PreparedStatementUserRepositoryTest {
             String userPassword="nhnacademy";
 
             User newUser = new User(userId,userName,userPassword);
+            Optional<User> userOptional =  userRepository.findById(userId);
             if(!userOptional.isPresent()){
                 userRepository.save(newUser);
             }
